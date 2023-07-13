@@ -3,6 +3,6 @@ A simple web application that uses a few different APIs to check the current wea
 
 ### I used the following APIs:
 
-- Fonts.Google
+- fonts.google
 - OpenWeatherMap
 - flagsAPI
