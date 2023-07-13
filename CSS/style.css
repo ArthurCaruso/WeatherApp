@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Lora:wght@500;600&family=Roboto+Slab:wght@200&display=swap');
+
+/*
+colors
+
+#E4EDF4
+#B7CDDB
+#82A6BE
+#35637D
+#133052
+
+*/
+
+:root{
+    --lighter: #E4EDF4;
+    --light: #B7CDDB;
+    --medium: #82A6BE;
+    --dark: #35637D;
+    --darker: #133052;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background: linear-gradient(180deg, var(--darker) 0%, var(--light) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+    background-color: var(--lighter);
+    padding: 2vh 2vw;
+    box-shadow: rgba(0, 0, 0, 0.234) 2px 4px 8px;
+    border: 2px solid var(--light);
+    border-radius: 0.4em;
+}
+
+/* form */
+.form{
+    height: 95%;
+}
+
+#mainTitle{
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: var(--dark);
+    font-weight: 700;
+    height: 10%;
+    font-size: 3vh;
+}
+
+#infoBox{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formInputContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.formInputContainer h3{
+    color: var(--darker);
+    font-size: small;
+}
+
+.inputBlock{
+    width: 100%;
+}
+
+#cityInput{
+    padding: 0.8rem;
+    border: none;
+    flex: 1;
+    border-radius: 0.4em;
+    width: 62%;
+}
+
+.inputBlock button {
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: var(--medium);
+    color: white;
+    border: none;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+/* weather */
+#weatherData{
+    border-top: 1px solid #ffff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+#weatherData h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+#weatherData h2 i{
+    font-size: 1rem;
+}
+
+#weatherData span{
+    margin: 0.6rem;
+}
+
+#country{
+    align-self: center;
+    height: 23px;
+}
+
+#descriptionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+}
+
+#detailContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#umidity{
+    border-right: 1px solid white;
+    margin: 0.6rem;
+    padding: 0.6rem;
+}
+
+@media screen and (min-width:700px) {   
+    .container{
+        width: 600px;
+    } 
+}
