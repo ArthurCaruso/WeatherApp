@@ -1,0 +1,8 @@
+# WeatherApp
+a simple web application that uses a few different APIs to check the current weather in a given city around the world.
+
+### I used the following APIs:
+
+- Fonts.Google
+- OpenWeatherMap
+- flagsAPI
